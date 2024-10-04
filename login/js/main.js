@@ -11,10 +11,29 @@ Function onAuthStateChanged(user)
 Write a function to check if a user is logged
 */
 
+function authStateListener() {
+    // [START auth_state_listener]
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            // User is signed in, see docs for a list of available properties
+            // https://firebase.google.com/docs/reference/js/v8/firebase.User
+            var uid = user.uid;
+            // ...
+            location.href = 'home.html';
+        } else {
+            // User is signed out
+            // ...
+
+        }
+    });
+    // [END auth_state_listener]
+}
 
 window.addEventListener('load', function () {
 
+
     //Listen for auth state changes
+    authStateListener();
 
     document.getElementById('sign-in-button').addEventListener('click', function () {
 
@@ -48,6 +67,7 @@ window.addEventListener('load', function () {
             .catch((error) => {
                 let errorCode = error.code;
                 let errorMessage = error.message;
+                alert('Logging fail');
                 console.log('Logging fail', errorMessage);
             });
 
