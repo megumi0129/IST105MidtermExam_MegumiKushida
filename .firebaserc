@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "socialnetworkproject-e0599"
-  }
+    "default": "socialnetworkproject-e0599",
+    "login": "portfolio-v1-megumikushida"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

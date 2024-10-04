@@ -33,8 +33,10 @@ function signOut() {
   // [START auth_sign_out]
   firebase.auth().signOut().then(() => {
     // Sign-out successful.
+    location.href = 'index.html';
   }).catch((error) => {
     // An error happened.
+    console.log('logging fail',error);
   });
   // [END auth_sign_out]
 }
