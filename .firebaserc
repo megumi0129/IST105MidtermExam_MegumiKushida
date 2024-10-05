@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "socialnetworkproject-e0599",
+    "default": "portfolio-v1-megumikushida",
+    "kushitaeminoMacBook-Pro:Lab_Firebase-Login-SocialNetworks kushidamegumi$ firebase use --add": "assignment1megumikushida",
     "login": "portfolio-v1-megumikushida"
   },
   "targets": {},
