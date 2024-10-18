@@ -1,7 +1,8 @@
 {
   "projects": {
-    "default": "socialnetworkproject-e0599",
-    "login": "portfolio-v1-megumikushida"
+    "login": "portfolio-v1-megumikushida",
+    "no": "assignment1megumikushida",
+    "default": "portfolio-v1-megumikushida"
   },
   "targets": {},
   "etags": {},
